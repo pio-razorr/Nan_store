@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Navbar */
+
+.header {
+    height: fit-content;
+    width: 100%;
+}
+
+.navbar-edit {
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 10px 20px; */
+    position: fixed;
+    display: flex;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar-fade {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.navbar-scrolled.navbar-fade {
+    opacity: 1;
+}
+
+.nav-kiri {
+    width: auto;
+}
+
+.navbar-scrolled {
+    background-color: rgba(228, 228, 228, 0.685);
+    background-color: #ffffff;
+}
+
+.nav-kanan {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.nav-teks {
+    font-family: 'Roboto';
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    line-height: 23px;
+    margin: 0px 10px;
+    color: #A5A5A5;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-teks:hover {
+    color: #1468C2;
+    text-decoration: underline;
+}
+
+.dropdown-profil {
+    position: relative;
+}
+
+.dropdown-profil-btn {
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+    outline: none;
+    display: flex;
+    border: none;
+}
+
+.nama-container {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 70px;
+}
+
+.dropdown-profil-isi {
+    justify-content: center;
+    flex-direction: column;
+    background: #1468C2;
+    border-radius: 10px;
+    align-items: center;
+    position: absolute;
+    display: none;
+}
+
+.dropdown-teks-isi-top {
+    border-bottom: 1px solid #FFFFFF;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+    font-family: 'Roboto';
+    text-decoration: none;
+    align-items: center;
+    font-style: normal;
+    line-height: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 15px;
+    display: flex;
+    height: 27px;
+    width: 122px;
+}
+
+.dropdown-teks-isi-bottom {
+    border-radius: 0 0 10px 10px;
+    justify-content: center;
+    font-family: 'Roboto';
+    text-decoration: none;
+    align-items: center;
+    font-style: normal;
+    line-height: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 15px;
+    display: flex;
+    height: 27px;
+    width: 122px;
+}
+
+.dropdown-teks-isi-top:hover,
+.dropdown-teks-isi-bottom:hover {
+    color: #FFFFFF;
+    background: #55a0f0;
+}
+
+.tampil {
+    display: flex;
+}
+
+.nav-dropdown-icon {
+    color: #A5A5A5;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.interview-img-2 {
+    position: absolute;
+    /* top: 45%; */
+    left: 32%;
+    bottom: 0;
+}
+
+.hero-kiri {
+    /* justify-content: center; */
+    margin-top: 200px;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    margin-left: 30px;
+    display: flex;
+    height: 700px;
+    width: 60%;
+}
+
+.hero-judul {
+    display: flex;
+}
+
+.pahlawan-teks {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 50px;
+    color: #F66820;
+}
+
+.hero-teks {
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 50px;
+    color: #1468C2;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.hero-sub-teks {
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 28px;
+    font-weight: 300;
+    color: #000000;
+    font-size: 23px;
+}
+
+.hero-btn {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #1468C2;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    font-style: normal;
+    line-height: 23px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 213px;
+    height: 49px;
+}
+
+.hero-btn:hover {
+    background: #4c99eb;
+}
+
+.hero-kanan {
+    position: relative;
+    height: inherit;
+    width: 40%;
+}
+
+.interview-img-1 {
+    position: absolute;
+    top: 0;
+    left: 22%;
+}
+
+/* @media screen and (max-width: 1200px) {
+    .hero {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .hero {
+        height: 110vh;
+    }
+} */
+
+@media screen and (max-width: 992px) {
+    .navbar-edit {
+        justify-content: space-between;
+    }
+
+    .nav-kanan {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .interview-img-1 {
+        display: none;
+    }
+
+    .interview-img-2 {
+        display: none;
+    }
+
+    .hero-kiri {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        margin-left: 30px;
+        height: 287px;
+        width: 90%;
+    }
+
+    .hero-kanan {
+        width: 0%;
+    }
+
+    .interview-img-2 {
+        width: 500px;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .interview-img-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .hero-kiri {
+        margin-right: 20px;
+    }
+
+    .hero-teks,
+    .pahlawan-teks {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .hero-sub-teks {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-height: 540px) {
+    .interview-img-2 {
+        display: none;
+    }
+}
